@@ -66,3 +66,9 @@ pip install -r requirements.txt
 
 # Run the script
 python script.py
+```
+
+## Important Notes
+
+-   This script was created for educational purposes. Be aware of Patek Philippe's terms of service before you attempt to scrape their site.
+-   The accuracy of data filled from secondary sources can't be guaranteed. It's essential to verify the supplemental data independently.
