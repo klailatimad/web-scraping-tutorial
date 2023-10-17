@@ -5,7 +5,7 @@ This repository provides educational material for learning web scraping using Py
 ## Table of Contents
 1. [Introduction to Web Scraping](./docs/introduction.md)
 2. [Basic Web Scraping with requests and BeautifulSoup](./docs/basic-web-scraping.md)
-3. More topics coming soon...
+3. [Setting Up the Environment](./docs/setting-up-environment.md)
 
 ## Prerequisites
 - Basic knowledge of Python
