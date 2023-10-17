@@ -18,7 +18,3 @@ This repository provides educational material for learning web scraping using Py
 - Basic knowledge of Python
 - Python environment set up on your local machine
 
-...additional relevant information...
-
-## Contributions
-...guidelines for contributions, if applicable...
