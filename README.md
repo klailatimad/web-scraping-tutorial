@@ -9,7 +9,10 @@ This repository provides educational material for learning web scraping using Py
 4. [Introduction to Scrapy](./docs/introduction-to-scrapy.md)
 5. [Advanced Scrapy Techniques](./docs/advanced-scrapy-techniques.md)
 6. [Handling JavaScript-Heavy Sites with Selenium](./docs/javascript-heavy-sites-selenium.md)
-7. 
+7. [Responsible Web Scraping: Best Practices and Ethics](./docs/responsible-web-scraping.md)
+8. [Challenges and Solutions in Web Scraping](./docs/challenges-and-solutions.md)
+9. [Practical Projects for Skill Application](./docs/practical-projects.md)
+10. [Handling Data Post-Scraping](./docs/data-post-scraping.md)
 
 ## Prerequisites
 - Basic knowledge of Python
