@@ -1,6 +1,6 @@
 # Web Scraping with Python: A Learning Guide
 
-This repository provides educational material for learning web scraping using Python. It starts with the basics using `requests` and `BeautifulSoup` and then progresses to more advanced techniques with `Scrapy` and `Selenium`.
+This repository provides educational material for learning web scraping using Python. It starts with the basics using `requests` and `BeautifulSoup` and then progresses to more advanced techniques with `Scrapy`.
 
 ## Table of Contents
 1. [Introduction to Web Scraping](./docs/introduction.md)
@@ -24,5 +24,5 @@ This repository provides educational material for learning web scraping using Py
 Learning is enhanced with practical application. The following sample projects provide a hands-on approach to applying the concepts covered in the documentation.
 
 ### [Scraping Patek.com](./projects/patek-scraping/README.md)
-This project involves scraping data from Patek.com, demonstrating real-world application of the concepts covered in this guide. It encompasses the use of `Scrapy`. The script, data, and a detailed walkthrough are provided in the project's folder.
+This project involves scraping data from Patek.com, demonstrating real-world application of the concepts covered in this guide. It encompasses the use of `BeautifulSoup` and `Scrapy`. The script, data, and a detailed walkthrough are provided in the project's folder.
 
