@@ -1,6 +1,6 @@
 # Patek Philippe Watches Data Scraping
 
-This project focuses on scraping detailed watch information from the official Patek Philippe website. The client required specific fields related to the watches to be extracted, cleaned, and, where data was missing, supplemented from alternative sources like Chrono24 and Watchbase.
+This project is dedicated to scraping detailed watch information from the official Blancpain website. The primary goal is to extract specific data points related to the watches, which will be used to build a comprehensive catalog for our client. This involves cleaning the data and, where necessary, supplementing missing information from alternative sources.
 
 ## Fields Extracted
 
