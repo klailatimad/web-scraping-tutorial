@@ -1,6 +1,25 @@
 
 # Blancpain Watches Data Scraping
 
+This project demonstrates a practical application of web scraping, focusing on extracting detailed watch information from Blancpain's official website. We aim to compile a comprehensive catalog for our client, involving data extraction, cleaning, and supplementation from alternative sources when necessary.
+
+## Table of Contents
+
+1. [Project Overview](#project-overview)
+2. [Fields Extracted](#fields-extracted)
+3. [Prerequisites](#prerequisites)
+4. [Installation](#installation)
+5. [Setting Up the Project](./docs/setting-up.md)
+6. [Running the Script](#running-the-script)
+7. [Data Storage](#data-storage)
+8. [Data Cleaning and Enrichment](./docs/data-cleaning.md)
+9. [Script Walkthrough](#script-walkthrough)
+10. [Challenges and Solutions](#challenges-and-solutions)
+11. [Troubleshooting](./docs/troubleshooting.md)
+12. [Important Notes](#important-notes)
+13. [Learning Points](#learning-points)
+
+## Project Overview
 This project focuses on scraping detailed watch information from the official Blancpain website. Our primary goal is to extract specific data points about the watches to compile a comprehensive catalog for our client. The process involves data extraction, cleaning, and supplementation from alternative sources when necessary.
 
 ## Fields Extracted
@@ -67,7 +86,7 @@ To activate the virtual environment:
     
     `myenv\Scripts\activate` 
     
-
+## Installation
 ### Chromedriver
 
 Chromedriver is essential for Selenium to interact with the Chrome browser. Set up Chromedriver by following these steps:
@@ -82,66 +101,54 @@ Chromedriver is essential for Selenium to interact with the Chrome browser. Set 
     driver = webdriver.Chrome(executable_path='/path/to/chromedriver')` 
     
 
-## Output
+## Running the Script
+This section provides detailed instructions on how to execute the scraping script once everything has been set up.
 
-The extracted data is compiled into a structured JSON file, making it easy to integrate into applications, databases, or websites.
+1. **Navigate to the Project's Root Directory:**
+   
+   Open a terminal and change your working directory to the project's root folder: 
+	```
+	cd path/to/blancpain-scraping
+	```
+2. **Execute the Script:**
 
-## Data Cleaning and Enrichment
+	Run the script using the following command:
+	```
+	python blancpain.py
+	```
+This command initiates the scraping process. Data extracted from the Blancpain website will be saved in a designated file (e.g., `output.json`) within the project's directory.
 
-Post-extraction, the data undergoes thorough cleaning, including:
+## Data Storage
 
--   Filling in missing information from reliable alternative sources.
--   Standardizing values for consistency across the dataset.
+The extracted data is stored in a JSON file for ease of use and compatibility. JSON format ensures the data structure  is both human-readable and easily parsed by various applications. 
+- **File Name:** The default file name is `output.json`. However, you can modify the script to specify a different file name or save location. 
+- **Data Format:** The data is saved in a structured JSON format, with  each watch entry constituting a JSON object  with  key-value pairs corresponding to the fields extracted.
 
-## Usage
+## Script Walkthrough
 
-This section outlines the steps to set up and run the Blancpain data scraping project. These instructions allow you to replicate the scraping process, gather the watch data, and save it in a structured JSON format.
+The script `blancpain.py` is the core of this project. Here's a brief overview of its structure and functionality:  
+1. **Imports  and Dependencies:** The script starts by importing necessary Python libraries such as `selenium`, `json`, and `time`. 
+2.  **Main Function:** The `main()` function initiates the webdriver, opens the Blancpain website, and calls other functions to perform the scraping. 
+3. **Data Extraction:** Various functions are defined to extract different data points like model, price, specifications, etc. These functions navigate the DOM structure  of the webpage to retrieve and store data in a Python dictionary. 
+4. **Error Handling and Logging:** The script includes error handling to manage common exceptions that may occur during the scraping process, ensuring the script continues running. Errors and status updates are logged for troubleshooting. 
+5. **Data Output:** After scraping is completed, the data dictionary is written to a JSON file in the local directory using the `json` library.
 
-### Setting Up the Project
-
-1.  **Clone the Repository:** Clone the repository to your local machine with this command:
-    
-    `git clone https://github.com/klailatimad/web-scraping-tutorial.git` 
-    
-2.  **Install Additional Dependencies:** This project uses Selenium, among other libraries. Install them within your virtual environment:
-        
-    `pip install selenium beautifulsoup4 requests lxml` 
-    
-3.  **Navigate to the Project Directory:** Change your directory to the `blancpain-scraping` folder in the cloned repository:
-        
-    `cd web-scraping-tutorial/projects/blancpain-scraping` 
-    
-4.  **Virtual Environment:** If you haven't already, set up and activate a virtual environment (see Prerequisites).
-    
-
-### Configuring the Project
-
-After the initial setup, configure the specific components of the project. These include the scraping script, data processing logic, and output formatting.
-
-1.  **Scraping Script:** Place `blancpain.py` in your project's main directory.
-2.  **Data Processing:** Set up data processing or cleaning scripts to run post-scraping.
-3.  **Output Formatting:** Set up the necessary utilities to format the data into a JSON file.
-
-### Running the Scraper
-
-With everything configured, you can run the scraping script through Python.
-
-1.  **Navigate to the Project's Root Directory:**
-       
-    `cd path/to/blancpain-scraping` 
-    
-2.  **Run the Script:**
-        
-    `python blancpain.py` 
-    
-
-## Troubleshooting
-
--   **Chromedriver Compatibility:** If you experience compatibility issues between Chromedriver and Chrome, ensure both are updated and compatible.
--   **Permission Issues:** If there are permission errors, make sure 'chromedriver.exe' is executable and your script has the necessary permissions.
+## Challenges and Solutions
+During the development of this project, we faced several challenges, especially related to website structure changes and data consistency. Here's how we tackled them: 
+- **Dynamic Website Content:** Blancpain's website uses JavaScript to dynamically load content. We used Selenium to automate the browser, allowing us to interact with the JavaScript elements effectively. 
+- **Data Consistency:** Some watches had missing or inconsistent information. We implemented additional logic to validate and, if necessary, standardize the data before saving it to our output file. 
+- **Website Structure Changes:** The website underwent occasional design updates, affecting our script's functionality. We adopted a modular design for our scraping functions, making it easier to update specific data extraction points without overhauling the entire script.
 
 ## Important Notes
 
--   This script is designed for educational purposes. Please comply with Blancpain's terms of service and privacy policy.
--   While we strive for data accuracy, it's not guaranteed, particularly from secondary sources. We strongly recommend independent data verification.
--   Respect the `robots.txt` of the websites you scrape and avoid overloading their servers.
+- This script is designed for educational purposes. Please comply with Blancpain's terms of service and respect their data ownership rights. Unauthorized data scraping can be legally contentious and is not condoned. 
+- Data accuracy is reliant on the source website. Any missing or incorrect information should be verified independently, especially if the data will inform significant decisions or projects. 
+- Be mindful of the `robots.txt` file of websites, and  do  not overload servers with frequent requests. Implement adequate delays between your requests, respecting the website's access guidelines.
+
+## Learning Points
+
+Through this project, we gained valuable insights into various aspects of web scraping, data cleaning, and automation. Key takeaways include: 
+- **Effective Web Scraping:** We learned to navigate and extract data from dynamic web pages using Selenium, handling elements that aren't immediately accessible with static scraping methods. 
+- **Data Handling:** Cleaning and standardizing the extracted data was crucial to ensure consistency and reliability, emphasizing the need for robust post-processing methods.
+- **Adaptability:** Regular changes in the website's structure necessitated a flexible script design, underscoring the importance of adaptability in web scraping endeavors. 
+- **Ethical Considerations:** This project reinforced the significance of ethical considerations when scraping data, highlighting the necessity to respect website terms and user agreements.
