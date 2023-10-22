@@ -1,6 +1,22 @@
 # Patek Philippe Watches Data Scraping
 
-This project is dedicated to scraping detailed watch information from the official Blancpain website. The primary goal is to extract specific data points related to the watches, which will be used to build a comprehensive catalog for our client. This involves cleaning the data and, where necessary, supplementing missing information from alternative sources.
+This project is dedicated to scraping detailed watch information from the official Patek Philippe website. The primary goal is to extract specific data points related to the watches, which will be used to build a comprehensive catalog for our client. This involves cleaning the data and, where necessary, supplementing missing information from alternative sources.
+
+# Table of Contents
+- [Fields Extracted](#fields-extracted)
+- [Output](#output)
+- [Data Cleaning and Enrichment](#data-cleaning-and-enrichment)
+- [Usage](#usage)
+  * [Prerequisites](#prerequisites)
+  * [Setting Up the Project](#setting-up-the-project)
+  * [Configuring the Project](#configuring-the-project)
+  * [Running the Spider](#running-the-spider)
+      + [Option 1: Run Directly with Scrapy](#option-1-run-directly-with-scrapy)
+      + [Option 2: Use the Provided Shell Script](#option-2-use-the-provided-shell-script)
+- [Best Practices](#best-practices)
+- [Troubleshooting](#troubleshooting)
+- [Important Notes](#important-notes)
+
 
 ## Fields Extracted
 
@@ -164,6 +180,28 @@ An alternative method is to use the `run_patek_spider.sh` script, which not only
     ```
 
     This command executes the spider, and the results will be saved in a file named `patek_<timestamp>.json`, and the logs will be written to `patek_<timestamp>.log`, where `<timestamp>` is the current date and time.
+
+
+## Troubleshooting
+
+Encountering issues is common during web scraping. Here are some common problems and suggested solutions:
+
+- **Data not being scraped properly:** Ensure the selectors used in the spider are up to date with the current structure of the Patek Philippe website. Websites often update their HTML structure.
+  
+- **Getting banned or receiving a 403 Forbidden error:** This likely means you're sending too many requests. Consider implementing delay mechanisms or using a rotating proxy service to avoid IP bans.
+
+- **'Spider not found' error when running the spider:** Ensure that the name of the spider in the `patek.py` file matches the one used in the command line.
+
+- **Missing fields in the output data:** Not all watches may have the same set of information available. Adjust your parsing logic to handle cases where certain fields might be missing.
+
+Remember, troubleshooting requires a good understanding of the code and the website you are interacting with. Keep an eye on the official website's changes and Scrapy updates.
+
+## Best Practices
+
+- **Respect Robots.txt:** Always check `robots.txt` before scraping any website, as it contains rules about what you should not be scraping.
+- **User-Agent Strings:** Use legitimate user-agent strings to prevent getting blocked.
+- **Error Handling:** Implement comprehensive error handling in your code to catch and log errors, making troubleshooting easier.
+- **Maintenance:** Regularly maintain your code, especially since website structures can change frequently, which might break your scraping script.
 
 ## Important Notes
 
