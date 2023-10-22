@@ -112,10 +112,10 @@ With the project set up and all files in place, you're ready to start the scrapi
 2.  **Run the Spider:** Execute your spider using the following command:
     
     ```sh
-	scrapy crawl patek_spider
+	scrapy crawl patek
 	```
     
-    Make sure to replace `patek_spider` with the actual name defined in your `patek.py` spider script.
+    Make sure to replace `patek` with the actual name defined in your `patek.py` spider script.
     
 
 #### Option 2: Use the Provided Shell Script
