@@ -40,15 +40,14 @@ The following fields were extracted for each watch listed on Patek.com:
 
 ## Output
 
-The data was compiled into a JSON file, ensuring a structured format that can easily be integrated into various applications or used for data analysis purposes.
+The data was compiled into a JSON file, ensuring a structured format that can easily be integrated into various applications, stored in a database, or loaded into their website.
 
 ## Data Cleaning and Enrichment
 
 Post-scraping, the data underwent a cleaning process which included:
 
-- Standardizing values through defined taxonomies.
 - Filling missing data by fetching required information from alternative sources such as Chrono24 and Watchbase.
-
+- Standardizing values through defined taxonomies.
 
 ## Usage
 
