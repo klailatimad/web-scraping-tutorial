@@ -81,7 +81,7 @@ Before you begin, ensure you have met the following requirements:
 1. **Clone the Repository:** Start by cloning the repository to your local machine. You can do this by running the following command in your terminal or command prompt:
 
     ```sh
-    git clone https://github.com/your-repo.git
+    git clone git clone https://github.com/klailatimad/web-scraping-tutorial.git
     ```
 
 2. **Create and Activate a Virtual Environment:** It's recommended to create a virtual environment to keep the project's dependencies isolated. Run the following commands in your terminal or command prompt:
