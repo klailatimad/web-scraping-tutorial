@@ -109,7 +109,7 @@ Chromedriver is essential for Selenium to interact with the Chrome browser. Set 
     
 2.  **Install Additional Dependencies:** This project uses Selenium, among other libraries. Install them within your virtual environment:
         
-    `pip install selenium beautifulsoup4 requests lxml` 
+    `pip install selenium beautifulsoup4 requests lxml pandas` 
     
 3.  **Navigate to the Project Directory:** Change your directory to the `blancpain-scraping` folder in the cloned repository:
         
@@ -133,7 +133,7 @@ This section provides detailed instructions on how to execute the scraping scrip
 	```
 	python blancpain.py
 	```
-	This command initiates the scraping process. Data extracted from the Blancpain website will be saved in a designated file (e.g., `output.json`) within the project's directory.
+	This command initiates the scraping process. Data extracted from the Blancpain website will be saved in a designated file (e.g., `blancpain_watches_data.csv`) within the project's directory.
 
 3.  **Monitoring the Process:** While the script is running, it logs significant events or milestones, such as completion of data extraction from a page or encountering an error. Keep an eye on these logs to understand the progress and identify any potential issues that might need attention.
     
@@ -143,7 +143,7 @@ This section provides detailed instructions on how to execute the scraping scrip
 
 The extracted data is stored in a JSON file for ease of use and compatibility. JSON format ensures the data structure  is both human-readable and easily parsed by various applications. 
 - **File Name:** The default file name is `output.json`. However, you can modify the script to specify a different file name or save location. 
-- **Data Format:** The data is saved in a structured JSON format, with  each watch entry constituting a JSON object  with  key-value pairs corresponding to the fields extracted.
+- **Data Format:** The data is saved in a structured JSON format, with each watch entry constituting a JSON object with key-value pairs corresponding to the fields extracted.
 - **Data Integrity:** The script includes measures to preserve data integrity, ensuring all extracted data is accurately saved without loss or corruption. In the event of an interruption, the script can resume from where it left off, preventing data loss.
 
 ## Script Walkthrough
