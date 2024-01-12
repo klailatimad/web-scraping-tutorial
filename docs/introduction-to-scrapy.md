@@ -69,7 +69,7 @@ class QuotesSpider(scrapy.Spider):
 To run your spider, use the command:
 
 ```sh
-scrapy crawl quotes` 
+scrapy crawl quotes
 ```
 This command should output the data scraped from the page to your command line.
 
