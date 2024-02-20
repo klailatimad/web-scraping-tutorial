@@ -31,3 +31,7 @@ This project showcases the power and flexibility of `Scrapy`, a comprehensive we
 ### 2. [Scraping Blancpain.com with BeautifulSoup and Selenium](./projects/blancpain-scraping/README.md)
 
 Our second project takes a different approach, using `BeautifulSoup` and `Selenium` to scrape data from Blancpain's website. While `BeautifulSoup` is perfect for simpler scraping tasks, combining it with `Selenium` allows handling JavaScript-heavy websites. This project will walk you through a practical example of how to use `BeautifulSoup` and `Selenium` for web scraping. The project's folder contains the script, sample data, and an extensive guide to understanding each step of the process.
+
+### 3. [Scraping farfetch.com with Scrapy](./projects/farfetch-scraping/README.md)
+
+This project, similar to Patek.com, also uses `Scrapy` to web crawl farfetch.com. We extract various fields that our client has requested. In this file, you will learn how to set up the environment, and successfully scrape and save the data to a csv file.
