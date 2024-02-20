@@ -1,5 +1,5 @@
 ## Scrapy Setup
-Inside your terminal, run the following:
+Inside your terminal, run the following to set up your environment:
 a. Run "sudo apt update" <br>
 b. "sudo apt install python3-pip" <br>
 c. "sudo apt install python3-scrapy" <br>
