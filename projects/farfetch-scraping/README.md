@@ -32,6 +32,6 @@ Scraper_API_Key='{enter Scraper API key}' <br>
 The spider name is "farfetch_women_get_urls", so we call this immediately after "scrapy crawl" <br>
 -o: csv file directory to save your scrape <br>
 -t: specify the output format, in our case, csv <br>
-3. To run a scrape for the item urls, run the following <br>
+3. To run a scrape for the item urls, run the following: <br>
 `scrapy crawl farfetch_women_update_database -o farfetch_new_existing_deleted/FarFetch_Women_New.csv -t csv`<br>
 4. If there's an error running the scrapy spiders, make sure twisted version is 21.7.0 and scrapy version is 2.11.0 <br>
