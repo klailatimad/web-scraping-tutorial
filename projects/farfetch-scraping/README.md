@@ -21,8 +21,8 @@ e. "CONCURRENT_REQUESTS = 32" <br>
 f. "CONCURRENT_REQUESTS_PER_DOMAIN = 32" <br>
 g. "CONCURRENT_REQUESTS_PER_IP = 16" <br>
 h. "COOKIES_ENABLED = False" <br>
-6. In the directory where you will be running your scrapy spiders, do the following:
-a. Create a .env file
-b. Inside the .env file, add the following line:
-Scraper_API_Key='{enter Scraper API key}'
+6. In the directory where you will be running your scrapy spiders, do the following: <br>
+a. Create a .env file <br>
+b. Inside the .env file, add the following line: <br>
+Scraper_API_Key='{enter Scraper API key}' <br>
 9. If there's an error running the scrapy spiders, make sure twisted version is 21.7.0 and scrapy version is 2.11.0 <br>
