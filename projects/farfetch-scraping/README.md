@@ -1,4 +1,4 @@
-## Scrapy Setup
+## Project Setup
 1. Inside your terminal, run the following to set up your environment:
 a. Run "sudo apt update" <br>
 b. "sudo apt install python3-pip" <br>
@@ -25,4 +25,7 @@ h. "COOKIES_ENABLED = False" <br>
 a. Create a .env file <br>
 b. Inside the .env file, add the following line: <br>
 Scraper_API_Key='{enter Scraper API key}' <br>
+
+## Running web scrape
+7. 
 9. If there's an error running the scrapy spiders, make sure twisted version is 21.7.0 and scrapy version is 2.11.0 <br>
