@@ -8,7 +8,7 @@ e. "pip install scraperapi-sdk==0.2.2" <br>
 f. "pip install python_dotenv==1.0.0" <br>
 g. "pip install pandas==1.3.5" <br>
 2. Run "scrapy startproject {project name}" inside the directory you wish to store this scrapy project in. <br>
-3. You may need to run the following if you get the following error: "AttributeError: module 'lib' has no attribute 'OpenSSL_add_all_algorithms'"
+3. You may need to run the following if you get the following error: "AttributeError: module 'lib' has no attribute 'OpenSSL_add_all_algorithms'" <br>
 a. python3 -m pip install --upgrade cryptography pyOpenSSL <br>
 b. sudo apt-get install libssl-dev <br>
 4. Once you have created a `Scrapy` project, put the Python files from this directory into the spiders folder in your own directory. Each `Scrapy` project has a spiders folder automatically (assuming we completed the `Scrapy` project step correctly). <br>
