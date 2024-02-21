@@ -69,6 +69,10 @@ class FarFetchWomenUpdateDBSpider(scrapy.Spider):
             yield scrapy.Request(url=url, callback=self.parse)
 
     def parse(self, response):
+
+        '''
+        This function scrapes the fields for each item url
+        '''
         
         # Create an empty dictionary (to be stored in a csv file later)
         item_dict = {}
