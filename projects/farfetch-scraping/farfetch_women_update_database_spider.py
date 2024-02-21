@@ -71,7 +71,9 @@ class FarFetchWomenUpdateDBSpider(scrapy.Spider):
     def parse(self, response):
 
         '''
-        This function scrapes the fields for each item url
+        This function scrapes the fields for each item url. Please note that because each website has a different HTML structure,
+        the code shown here will likely not be applicable to another website that you scrape. I built out the code for this function
+        by inspecting the HTML of the item url pages.
         '''
         
         # Create an empty dictionary (to be stored in a csv file later)
