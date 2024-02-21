@@ -21,7 +21,8 @@ class FarFetchWomenUrlsSpider(scrapy.Spider):
     def start_requests(self):
 
         '''
-        This function traverses through each subfilter we want to loop through
+        This function traverses through each subfilter we want to loop through. "start_requests" is a special function that is
+        an entrypoint into this .py file when one runs "scrapy crawl {spider name}"
         '''
 
         # Provide the url to start the crawl
